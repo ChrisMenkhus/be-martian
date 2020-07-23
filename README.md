@@ -1,5 +1,7 @@
 Be-Martian
 
+https://chrismenkhus.github.io/be-martian/
+
 A webdesign experiement to learn how to animate
 html and svgs with css animate, ~~framer motion~~, and on scroll. Be-Martian is also an attempt at atomic design principles in React. 
 
