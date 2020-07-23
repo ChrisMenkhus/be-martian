@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/be-martian/static/css/main.b4d3a40f.chunk.css",
+    "main.js": "/be-martian/static/js/main.22fe41a6.chunk.js",
+    "main.js.map": "/be-martian/static/js/main.22fe41a6.chunk.js.map",
+    "runtime-main.js": "/be-martian/static/js/runtime-main.0c61003c.js",
+    "runtime-main.js.map": "/be-martian/static/js/runtime-main.0c61003c.js.map",
+    "static/js/2.78566745.chunk.js": "/be-martian/static/js/2.78566745.chunk.js",
+    "static/js/2.78566745.chunk.js.map": "/be-martian/static/js/2.78566745.chunk.js.map",
+    "index.html": "/be-martian/index.html",
+    "precache-manifest.91aa7b5e998b79a6402110ce6627d2ee.js": "/be-martian/precache-manifest.91aa7b5e998b79a6402110ce6627d2ee.js",
+    "service-worker.js": "/be-martian/service-worker.js",
+    "static/css/main.b4d3a40f.chunk.css.map": "/be-martian/static/css/main.b4d3a40f.chunk.css.map",
+    "static/js/2.78566745.chunk.js.LICENSE.txt": "/be-martian/static/js/2.78566745.chunk.js.LICENSE.txt",
+    "static/media/orbits.a10e779c.svg": "/be-martian/static/media/orbits.a10e779c.svg",
+    "static/media/planetandtree.89144f94.svg": "/be-martian/static/media/planetandtree.89144f94.svg",
+    "static/media/rocket.cb6ac538.svg": "/be-martian/static/media/rocket.cb6ac538.svg",
+    "static/media/stars.jpg": "/be-martian/static/media/stars.1b9714f6.jpg",
+    "static/media/stars2.jpg": "/be-martian/static/media/stars2.cd8b33f8.jpg",
+    "static/media/stars3.jpg": "/be-martian/static/media/stars3.805ef50d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c61003c.js",
+    "static/js/2.78566745.chunk.js",
+    "static/css/main.b4d3a40f.chunk.css",
+    "static/js/main.22fe41a6.chunk.js"
+  ]
+}
