@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useRef, createRef, useEffect, useState} from 'react';
+import AppWrapper from './atoms/AppWrapper.js'
+import Nav from './organisms/Nav.js'
+import Home from './pages/Home.js'
+import Travel from './pages/Travel.js'
+import Living from './pages/Living.js'
 
-function App() {
+const scrollToRef = (ref) => {
+  console.log(ref);
+  window.scrollTo(0, ref.current.offsetTop);
+}
+
+export default function App() {
+  const homeRef = useRef();
+  const travelRef = useRef();
+  const livingRef = useRef();
+  const [activePage, setActivePage] = useState(1);
+
+
+
+  useEffect( () => {
+    console.log('active page = ' + activePage )
+  }, [activePage])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppWrapper>    
+      <Nav activePage={activePage} >
+        <li className={activePage === 1 ? 'active' : ''} onClick={()=>{ scrollToRef(homeRef) }}>Home</li>
+        <li className={activePage === 2 ? 'active' : ''} onClick={()=>{ scrollToRef(travelRef) }}>Travel</li>
+        <li className={activePage === 3 ? 'active' : ''} onClick={()=>{ scrollToRef(livingRef) }}>Living</li>  
+      </Nav>
+
+      <Home ref={homeRef} setActivePage={setActivePage} activePage={activePage} /> 
+      <Travel ref={travelRef} setActivePage={setActivePage}/>
+      <Living ref={livingRef} setActivePage={setActivePage}/>
+
+    </AppWrapper>
   );
 }
 
-export default App;
+
